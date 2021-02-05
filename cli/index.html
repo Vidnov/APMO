@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <title>Hello World!</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+</head>
+
+<body>
+
+    <div id="content1" style="display: block;">
+        <h1>Test Project</h1>
+        <p>
+            Вы используете node
+            <script>document.write(process.versions.node)</script>,
+            Chrome
+            <script>document.write(process.versions.chrome)</script>,
+            и Electron
+            <script>document.write(process.versions.electron)</script>.
+        </p>
+        <button class="btn" onclick="getData()">Получить данные с сервера</button>
+    </div>
+
+
+
+    <div id="content2" style="display: none;">
+        <nav>
+            <div class="center">
+                <a class="center brand-logo">Тестовое задание от компании <span id="company"></span></a>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="slider">
+                <ul class="slides">
+                    <li>
+                        <img src="../cli/src/img/1.jpg"> <!-- random image -->
+                        <div class="caption left-align">
+                            <h3>Выполнил</h3>
+                            <h5 id="FirstName" class="light grey-text text-lighten-3"></h5>
+                            <h5 id="LastName" class="light grey-text text-lighten-3"></h5>
+                            <h5 id="SecondName" class="light grey-text text-lighten-3"></h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../cli/src/img/2.jpg"> <!-- random image -->
+                        <div class="caption left-align">
+                            <h3>Использовались Фреймворки</h3>
+                            <h5 id="server" class="light grey-text text-lighten-3"></h5>
+                            <h5 id="cli" class="light grey-text text-lighten-3"></h5>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <nav class="footer">
+            <div class="center">
+                <a class="right brand-logo "></span></a>
+            </div>
+        </nav>
+    </div>
+   
+    <script src="./script/script.js"></script>
+</body>
+
+</html>

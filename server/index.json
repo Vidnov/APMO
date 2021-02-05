@@ -1,0 +1,14 @@
+{
+    "company":"Ammo",
+    "peoples": [
+        {
+            "FirstName": "Vidnov",
+            "LastName": "Nikita",
+            "SecondName": "Alekseevich"
+        }
+    ],
+    "frameworks":{
+        "client":"Electron + Materialize",
+        "server":"Tornado"
+    }
+}
